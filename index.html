@@ -85,19 +85,20 @@
             const Humidity = data.main.humidity
             document.getElementById('Humidity').innerHTML = `${Humidity}%`;
             // day and nyt
-            const sunrise = data.sys.sunrise
-            const sunset = data.sys.sunset
-            const Ctime = Math.floor(Date.now() / 1000);
-            console.log(sunrise, sunset);
-            if (Ctime >= sunrise && Ctime <= sunset) {
-                // Day time background image
-                document.getElementById('days').classList.remove('bg-[url("https://img.freepik.com/premium-vector/moon-night-landscape-vector-illustration-pine-tree-night-lake_538866-357.jpg")]');
-                document.getElementById('days').classList.add('bg-[url("https://t4.ftcdn.net/jpg/03/14/38/47/240_F_314384784_Sb79AL9L0UaschHwVfeiWsPchMpQi0f1.jpg")]');
-            } else {
-                // Night time background image
-                document.getElementById('days').classList.remove('bg-[url("https://t4.ftcdn.net/jpg/03/14/38/47/240_F_314384784_Sb79AL9L0UaschHwVfeiWsPchMpQi0f1.jpg")]');
-                document.getElementById('days').classList.add('bg-[url("https://img.freepik.com/premium-vector/moon-night-landscape-vector-illustration-pine-tree-night-lake_538866-357.jpg")]');
-            }
+            // const sunrise = data.sys.sunrise
+            // const sunset = data.sys.sunset
+            // const Ctime = Math.floor(Date.now() / 1000);
+            // console.log(sunrise, sunset);
+            // console.log(Ctime);
+            // if (Ctime >= sunrise && Ctime <= sunset) {
+            //     // Day time background image
+            //     document.getElementById('days').classList.remove('bg-[url("https://img.freepik.com/premium-vector/moon-night-landscape-vector-illustration-pine-tree-night-lake_538866-357.jpg")]');
+            //     document.getElementById('days').classList.add('bg-[url("https://t4.ftcdn.net/jpg/03/14/38/47/240_F_314384784_Sb79AL9L0UaschHwVfeiWsPchMpQi0f1.jpg")]');
+            // } else {
+            //     // Night time background image
+            //     document.getElementById('days').classList.remove('bg-[url("https://t4.ftcdn.net/jpg/03/14/38/47/240_F_314384784_Sb79AL9L0UaschHwVfeiWsPchMpQi0f1.jpg")]');
+            //     document.getElementById('days').classList.add('bg-[url("https://img.freepik.com/premium-vector/moon-night-landscape-vector-illustration-pine-tree-night-lake_538866-357.jpg")]');
+            // }
 
         })
     }
